@@ -199,19 +199,13 @@
       filtered.forEach(product => {
         const card = document.createElement('div');
         card.className = 'product-card';
-        card.innerHTML = `
-  <img src="${product.image}" alt="${product.title}">
-  <div class="product-info">
-    <h3>${product.title}</h3>
-    <p>${product.description}</p>
-    <span class="tag">${product.category}</span>
-    <a href="${product.link}" target="_blank">Voir sur CNFans</a>
-    <a href="${product.stripeLink}" target="_blank">💳 Payer avec Stripe</a>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="${product.paypalButtonId}">
-      <input type="submit" value="💰 Payer avec PayPal">
-    </form>
+        card.innerHTML =
+          <img src="${product.image}" alt="${product.title}"> 
+          <div class="product-info"> 
+          <h3>${product.title}</h3> 
+          <p>${product.description}</p>
+          <span class="tag">${product.category}</span>
+          <a href="${product.link}" target="_blank">Voir sur CNFans</a>
   </div>
 `;
 
@@ -230,6 +224,7 @@
 
 </body>
 </html>
+
 
 
 
