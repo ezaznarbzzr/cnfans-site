@@ -199,15 +199,15 @@
       filtered.forEach(product => {
         const card = document.createElement('div');
         card.className = 'product-card';
-        card.innerHTML =
-          <img src="${product.image}" alt="${product.title}"> 
-          <div class="product-info"> 
-          <h3>${product.title}</h3> 
-          <p>${product.description}</p>
-          <span class="tag">${product.category}</span>
-          <a href="${product.link}" target="_blank">Voir sur CNFans</a>
-  </div>
-`;
+        card.innerHTML = `
+          <img src="${product.image}" alt="${product.title}">
+          <div class="product-info">
+            <h3>${product.title}</h3>
+            <p>${product.description}</p>
+            <span class="tag">${product.category}</span>
+            <a href="${product.link}" target="_blank">Voir sur CNFans</a>
+          </div>
+        `;
 
         container.appendChild(card);
       });
@@ -224,6 +224,7 @@
 
 </body>
 </html>
+
 
 
 
