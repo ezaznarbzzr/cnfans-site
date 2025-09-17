@@ -149,7 +149,9 @@
         description: "Style streetwear confortable",
         image: "https://via.placeholder.com/300x200.png?text=T-Shirt",
         link: "https://cnfans.com/product/?id=9876543210&platform=weidian&ref=214907",
-        category: "vêtements"
+        category: "vêtements",
+        stripeLink: "https://buy.stripe.com/test_1234567890abcdef",
+        paypalButtonId: "TON_PAYPAL_BUTTON_ID"
       },
       {
         title: "Casquette Logo",
@@ -198,14 +200,21 @@
         const card = document.createElement('div');
         card.className = 'product-card';
         card.innerHTML = `
-          <img src="${product.image}" alt="${product.title}">
-          <div class="product-info">
-            <h3>${product.title}</h3>
-            <p>${product.description}</p>
-            <span class="tag">${product.category}</span>
-            <a href="${product.link}" target="_blank">Voir sur CNFans</a>
-          </div>
-        `;
+  <img src="${product.image}" alt="${product.title}">
+  <div class="product-info">
+    <h3>${product.title}</h3>
+    <p>${product.description}</p>
+    <span class="tag">${product.category}</span>
+    <a href="${product.link}" target="_blank">Voir sur CNFans</a>
+    <a href="${product.stripeLink}" target="_blank">💳 Payer avec Stripe</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="${product.paypalButtonId}">
+      <input type="submit" value="💰 Payer avec PayPal">
+    </form>
+  </div>
+`;
+
         container.appendChild(card);
       });
     }
@@ -221,6 +230,7 @@
 
 </body>
 </html>
+
 
 
 
