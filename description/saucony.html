@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAUCONY 1:1 – Fiche produit</title>
+  <meta name="description" content="B30 1:1 — Sneakers tendance. Photos, description, caractéristiques, et lien d'achat CNFans.">
+  <link rel="icon" href="../images/favicon.png">
+  <style>
+    :root{
+      --primary:#227986;
+      --bg:#f0f2f5;
+      --card:#fff;
+      --text:#333;
+      --muted:#555;
+      --shadow:0 4px 6px rgba(0,0,0,0.1);
+      --radius:12px;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--text)}
+    header{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:16px 20px;background:var(--card);box-shadow:var(--shadow);position:sticky;top:0;z-index:10
+    }
+    header h1{font-size:18px;margin:0;color:var(--primary)}
+    header a{
+      text-decoration:none;background:var(--primary);color:#fff;
+      padding:8px 12px;border-radius:8px
+    }
+    main{max-width:1100px;margin:24px auto;padding:0 16px}
+    .product{
+      display:grid;grid-template-columns:1.2fr 1fr;gap:24px;
+    }
+    @media(max-width:900px){.product{grid-template-columns:1fr}}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .gallery{padding:12px}
+    .hero{
+      width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px
+    }
+    .thumbs{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+    .thumbs img{
+      width:110px;height:82px;object-fit:cover;border-radius:8px;cursor:pointer;
+      outline:2px solid transparent;transition:transform .15s, outline-color .15s
+    }
+    .thumbs img:hover{transform:scale(1.03);outline-color:var(--primary)}
+    .info{padding:18px 18px 6px}
+    .title{margin:0 0 8px;font-size:24px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px}
+    .tag{background:#eee;color:#333;padding:4px 8px;border-radius:6px;font-size:12px}
+    .desc{color:var(--muted);line-height:1.5}
+    .kv{padding:16px 18px 20px}
+    .kv h3{margin:0 0 10px;font-size:16px;color:#222}
+    .kv ul{margin:0;padding-left:18px}
+    .kv li{margin:6px 0}
+    .actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{
+      display:inline-block;text-decoration:none;background:var(--primary);color:#fff;
+      padding:10px 14px;border-radius:8px;transition:background .2s
+    }
+    .btn:hover{background:#4752c4}
+    .btn.secondary{background:#e9ecff;color:#2b2e5f}
+    footer{max-width:1100px;margin:28px auto 40px;color:#666;font-size:13px;padding:0 16px}
+    /* Lightbox minimal */
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:9999}
+    .lightbox.open{display:flex}
+    .lightbox img{max-width:92vw;max-height:90vh;border-radius:10px}
+    .lightbox button{position:absolute;top:16px;right:20px;background:#fff;border:none;border-radius:8px;padding:8px 12px;cursor:pointer}
+  
+      /* Footer social fixe */
+.social-footer {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  z-index: 10000;
+}
+.social-footer a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .2s ease;
+}
+.social-footer a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+.social-footer a:active { transform: translateY(0); }
+
+/* Marques */
+.social-footer .yt { background: #ff0000; }
+.social-footer .dc { background: #5865F2; }    /* Discord blurple officiel */
+.social-footer .tt { background: #000000; }    /* TikTok noir */
+
+/* Icônes */
+.social-footer svg { width: 24px; height: 24px; display: block; }
+.social-footer .yt svg path { fill: #fff; }
+.social-footer .dc svg path { fill: #fff; }
+.social-footer .tt svg path { fill: #fff; }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .social-footer a { box-shadow: 0 4px 12px rgba(0,0,0,.35); }
+}
+
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"SAUCONY 1:1",
+    "description":"Sneakers tendance sur CNFans",
+    "image":[
+      "../images/B30.jpg",
+      "../images/B30_detail_1.jpg",
+      "../images/B30_detail_2.jpg"
+    ],
+    "brand":{"@type":"Brand","name":"CNFans"},
+    "category":"chaussures"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>🐺 Aznarbzzr Sélections CNFans 🐺</h1>
+    <a href="../index.html">Retour aux sélections</a>
+  </header>
+
+  <main>
+    <section class="product">
+      <!-- Galerie -->
+      <div class="card gallery">
+        <img id="hero" class="hero" src="../images/SAUCONY/SAUCONY.jpg" alt="SAUCONY 1:1">
+        <div class="thumbs">
+          <img src="../images/SAUCONY/SAUCONY.jpg" alt="SAUCONY vue 1" data-full="../images/SAUCONY/SAUCONY.jpg">
+          <img src="../images/SAUCONY/SAUCONY_2.jpg" alt="SAUCONY vue 2" data-full="../images/SAUCONY/SAUCONY_2.jpg">
+          <img src="../images/SAUCONY/SAUCONY_3.jpg" alt="SAUCONY vue 3" data-full="../images/SAUCONY/SAUCONY_3.jpg">
+          <img src="../images/SAUCONY/SAUCONY_4.jpg" alt="SAUCONY vue 4" data-full="../images/SAUCONY/SAUCONY_4.jpg">
+          <img src="../images/SAUCONY/SAUCONY_5.jpg" alt="SAUCONY vue 5" data-full="../images/SAUCONY/SAUCONY_5.jpg">
+        </div>
+      </div>
+
+      <!-- Infos -->
+      <div class="card">
+        <div class="info">
+          <h2 class="title">SAUCONY Omni 9 1:1</h2>
+          <div class="tags">
+            <span class="tag">chaussures</span>
+          </div>
+          <p class="desc">
+            Modèle SAUCONY Omni 9 1:1 avec finitions soignées et look moderne, idéal pour un style urbain polyvalent. Tige respirante, semelle confortable, et coloris polyvalent pour un usage quotidien.
+          </p>
+          <div class="actions">
+            <a class="btn" href="https://cnfans.com/product/?id=7237516141&platform=weidian&ref=52495" target="_blank" rel="noopener">Voir sur CNFans</a>
+            <a class="btn" href="https://yolo66.x.yupoo.com/categories/675984?isSubCate=true" target="_blank" rel="noopener">Voir sur Yupoo</a>
+            <a class="btn secondary" href="../index.html">Retour</a>
+          </div>
+        </div>
+        <div class="kv">
+          <h3>Détails</h3>
+          <ul>
+            <li>Couleurs: noir/gris (exemple)</li>
+            <li>Tailles: 39–45 EU</li>
+            <li>Matières: mesh + renforts synthétiques</li>
+            <li>Usage: lifestyle / street</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lb" aria-hidden="true">
+    <button id="lbClose" aria-label="Fermer">Fermer</button>
+    <img id="lbImg" alt="Agrandissement">
+  </div>
+
+  <script>
+    // Mini galerie: clic vignette -> change l'image principale
+    const hero = document.getElementById('hero');
+    const thumbs = document.querySelectorAll('.thumbs img');
+    thumbs.forEach(t => {
+      t.addEventListener('click', () => {
+        const full = t.getAttribute('data-full');
+        hero.src = full;
+        hero.alt = t.alt;
+      });
+      // Clic long = ouvrir lightbox
+      t.addEventListener('dblclick', () => openLightbox(t.getAttribute('data-full')));
+    });
+    // Lightbox
+    const lb = document.getElementById('lb');
+    const lbImg = document.getElementById('lbImg');
+    const lbClose = document.getElementById('lbClose');
+    function openLightbox(src){
+      lbImg.src = src;
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden','false');
+      lbClose.focus();
+    }
+    function closeLightbox(){
+      lb.classList.remove('open');
+      lb.setAttribute('aria-hidden','true');
+      lbImg.src = '';
+    }
+    lb.addEventListener('click', (e) => { if(e.target===lb || e.target===lbClose) closeLightbox(); });
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && lb.classList.contains('open')) closeLightbox(); });
+  </script>
+
+  <!-- Liens sociaux en bas centré -->
+<div class="social-footer" aria-label="Liens sociaux">
+  <!-- YouTube -->
+  <a class="yt" href="https://www.youtube.com/@TON_CHANNEL" aria-label="YouTube">
+    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+      <path d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.9 3 12 3 12 3s-6.9 0-8.7.4A4 4 0 0 0 .5 6.2 41.7 41.7 0 0 0 0 12a41.7 41.7 0 0 0 .5 5.8 4 4 0 0 0 2.8 2.8C5.1 21 12 21 12 21s6.9 0 8.7-.4a4 4 0 0 0 2.8-2.8A41.7 41.7 0 0 0 24 12a41.7 41.7 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/>
+    </svg>
+  </a>
+
+  <!-- Discord (SVG plus net) -->
+  <a class="dc" href="https://discord.gg/TON_INVITE" aria-label="Discord" title="Discord">
+  <svg viewBox="0 -28.5 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#ffffff"/>
+  </svg>
+</a>
+
+  <!-- TikTok -->
+  <a class="tt" href="https://www.tiktok.com/@TON_HANDLE" aria-label="TikTok" title="TikTok">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <path d="M8.45095 19.7926C8.60723 18.4987 9.1379 17.7743 10.1379 17.0317C11.5688 16.0259 13.3561 16.5948 13.3561 16.5948V13.2197C13.7907 13.2085 14.2254 13.2343 14.6551 13.2966V17.6401C14.6551 17.6401 12.8683 17.0712 11.4375 18.0775C10.438 18.8196 9.90623 19.5446 9.7505 20.8385C9.74562 21.5411 9.87747 22.4595 10.4847 23.2536C10.3345 23.1766 10.1815 23.0889 10.0256 22.9905C8.68807 22.0923 8.44444 20.7449 8.45095 19.7926ZM22.0352 6.97898C21.0509 5.90039 20.6786 4.81139 20.5441 4.04639H21.7823C21.7823 4.04639 21.5354 6.05224 23.3347 8.02482L23.3597 8.05134C22.8747 7.7463 22.43 7.38624 22.0352 6.97898ZM28 10.0369V14.293C28 14.293 26.42 14.2312 25.2507 13.9337C23.6179 13.5176 22.5685 12.8795 22.5685 12.8795C22.5685 12.8795 21.8436 12.4245 21.785 12.3928V21.1817C21.785 21.6711 21.651 22.8932 21.2424 23.9125C20.709 25.246 19.8859 26.1212 19.7345 26.3001C19.7345 26.3001 18.7334 27.4832 16.9672 28.28C15.3752 28.9987 13.9774 28.9805 13.5596 28.9987C13.5596 28.9987 11.1434 29.0944 8.96915 27.6814C8.49898 27.3699 8.06011 27.0172 7.6582 26.6277L7.66906 26.6355C9.84383 28.0485 12.2595 27.9528 12.2595 27.9528C12.6779 27.9346 14.0756 27.9528 15.6671 27.2341C17.4317 26.4374 18.4344 25.2543 18.4344 25.2543C18.5842 25.0754 19.4111 24.2001 19.9423 22.8662C20.3498 21.8474 20.4849 20.6247 20.4849 20.1354V11.3475C20.5435 11.3797 21.2679 11.8347 21.2679 11.8347C21.2679 11.8347 22.3179 12.4734 23.9506 12.8889C25.1204 13.1864 26.7 13.2483 26.7 13.2483V9.91314C27.2404 10.0343 27.7011 10.0671 28 10.0369Z" fill="#EE1D52"></path>
+    <path d="M26.7009 9.91314V13.2472C26.7009 13.2472 25.1213 13.1853 23.9515 12.8879C22.3188 12.4718 21.2688 11.8337 21.2688 11.8337C21.2688 11.8337 20.5444 11.3787 20.4858 11.3464V20.1364C20.4858 20.6258 20.3518 21.8484 19.9432 22.8672C19.4098 24.2012 18.5867 25.0764 18.4353 25.2553C18.4353 25.2553 17.4337 26.4384 15.668 27.2352C14.0765 27.9539 12.6788 27.9357 12.2604 27.9539C12.2604 27.9539 9.84473 28.0496 7.66995 26.6366L7.6591 26.6288C7.42949 26.4064 7.21336 26.1717 7.01177 25.9257C6.31777 25.0795 5.89237 24.0789 5.78547 23.7934C5.78529 23.7922 5.78529 23.791 5.78547 23.7898C5.61347 23.2937 5.25209 22.1022 5.30147 20.9482C5.38883 18.9122 6.10507 17.6625 6.29444 17.3494C6.79597 16.4957 7.44828 15.7318 8.22233 15.0919C8.90538 14.5396 9.6796 14.1002 10.5132 13.7917C11.4144 13.4295 12.3794 13.2353 13.3565 13.2197V16.5948C13.3565 16.5948 11.5691 16.028 10.1388 17.0317C9.13879 17.7743 8.60812 18.4987 8.45185 19.7926C8.44534 20.7449 8.68897 22.0923 10.0254 22.991C10.1813 23.0898 10.3343 23.1775 10.4845 23.2541C10.7179 23.5576 11.0021 23.8221 11.3255 24.0368C12.631 24.8632 13.7249 24.9209 15.1238 24.3842C16.0565 24.0254 16.7586 23.2167 17.0842 22.3206C17.2888 21.7611 17.2861 21.1978 17.2861 20.6154V4.04639H20.5417C20.6763 4.81139 21.0485 5.90039 22.0328 6.97898C22.4276 7.38624 22.8724 7.7463 23.3573 8.05134C23.5006 8.19955 24.2331 8.93231 25.1734 9.38216C25.6596 9.61469 26.1722 9.79285 26.7009 9.91314Z" fill="#000000"></path>
+    <path d="M4.48926 22.7568V22.7594L4.57004 22.9784C4.56076 22.9529 4.53074 22.8754 4.48926 22.7568Z" fill="#69C9D0"></path>
+    <path d="M10.5128 13.7916C9.67919 14.1002 8.90498 14.5396 8.22192 15.0918C7.44763 15.7332 6.79548 16.4987 6.29458 17.354C6.10521 17.6661 5.38897 18.9168 5.30161 20.9528C5.25223 22.1068 5.61361 23.2983 5.78561 23.7944C5.78543 23.7956 5.78543 23.7968 5.78561 23.798C5.89413 24.081 6.31791 25.0815 7.01191 25.9303C7.2135 26.1763 7.42963 26.4111 7.65924 26.6334C6.92357 26.1457 6.26746 25.5562 5.71236 24.8839C5.02433 24.0451 4.60001 23.0549 4.48932 22.7626C4.48919 22.7605 4.48919 22.7584 4.48932 22.7564V22.7527C4.31677 22.2571 3.95431 21.0651 4.00477 19.9096C4.09213 17.8736 4.80838 16.6239 4.99775 16.3108C5.4985 15.4553 6.15067 14.6898 6.92509 14.0486C7.608 13.4961 8.38225 13.0567 9.21598 12.7484C9.73602 12.5416 10.2778 12.3891 10.8319 12.2934C11.6669 12.1537 12.5198 12.1415 13.3588 12.2575V13.2196C12.3808 13.2349 11.4148 13.4291 10.5128 13.7916Z" fill="#69C9D0"></path>
+    <path d="M20.5438 4.04635H17.2881V20.6159C17.2881 21.1983 17.2881 21.76 17.0863 22.3211C16.7575 23.2167 16.058 24.0253 15.1258 24.3842C13.7265 24.923 12.6326 24.8632 11.3276 24.0368C11.0036 23.823 10.7187 23.5594 10.4844 23.2567C11.5962 23.8251 12.5913 23.8152 13.8241 23.341C14.7558 22.9821 15.4563 22.1734 15.784 21.2774C15.9891 20.7178 15.9864 20.1546 15.9864 19.5726V3H20.4819C20.4819 3 20.4315 3.41188 20.5438 4.04635ZM26.7002 8.99104V9.9131C26.1725 9.79263 25.6609 9.61447 25.1755 9.38213C24.2352 8.93228 23.5026 8.19952 23.3594 8.0513C23.5256 8.1559 23.6981 8.25106 23.8759 8.33629C25.0192 8.88339 26.1451 9.04669 26.7002 8.99104Z" fill="#69C9D0"></path>
+  </svg>
+</a>
+
+</div>
+
+
+</body>
+</html>
